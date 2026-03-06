@@ -1,6 +1,6 @@
 # Multi-Strategy Allocation Engine
 
-An end-to-end portfolio allocation system that ingests a universe of strategy return streams, cleans the data, scores and ranks every strategy, selects a portfolio under correlation constraints, and optimises position weights using one of 7 allocation methods — all under a hard 10% single-position cap.
+An end-to-end portfolio allocation system that ingests a universe of strategy return streams, cleans the data, scores and ranks every strategy, selects a portfolio under correlation constraints, and optimises position weights using one of 7 allocation methods, all under a hard 10% single-position cap.
 
 **[Live Dashboard →](https://angel4angelov-glitch.github.io/Multi-Strategy-Allocation-Engine)**
 
