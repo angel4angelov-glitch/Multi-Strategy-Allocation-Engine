@@ -3681,7 +3681,7 @@ function loadSelectedScenario() {
 
   fetch(`${scenario}.csv`)
     .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status} — file not found. Ensure ${scenario}.csv exists in the repo root.`);
+      if (!r.ok) throw new Error(`HTTP ${r.status} — file not found. Ensure data/${scenario}.csv exists.`);
       return r.text();
     })
     .then(text => {
@@ -3690,7 +3690,7 @@ function loadSelectedScenario() {
     })
     .catch(err => {
       log(`Failed to load scenario: ${err.message}`, "log-warn");
-      log("Ensure CSV files are in the same folder as this HTML.", "log-warn");
+      log("Ensure CSV files are in a /data subfolder alongside this HTML.", "log-warn");
     });
 }
 
