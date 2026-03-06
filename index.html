@@ -3679,7 +3679,7 @@ function loadSelectedScenario() {
   const label = sel.options[sel.selectedIndex].text;
   log(`Loading scenario: ${label}...`, "log-action");
 
-  fetch(`${scenario}.csv`)
+  fetch(`data/${scenario}.csv`)
     .then(r => {
       if (!r.ok) throw new Error(`HTTP ${r.status} — file not found. Ensure data/${scenario}.csv exists.`);
       return r.text();
